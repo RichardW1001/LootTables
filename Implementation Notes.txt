@@ -1,0 +1,14 @@
+- Assume that System.Random is "random enough"!
+- Assume won't get same random number twice
+- Create a seam to inject a non-random random generator for testing purposes
+- Don't impose requirement to make sure the loot table weightings add up to any value( easier to use)
+- Go with simple naive logger implementation for now as arbitrary dependency
+- Use simple OWIN project to host endpoint
+
+
+Tests:
+
+- Using 2 different "flavours", SpecFlow and TickSpec, 'cos we talked about it on the phone
+- Note that the SpecFlow package is single-handedly half of the file size of the entire thing!!!
+- Am using latest from master of TickSpec, which isn't currently a public nuget package, so it came from a local build and import
+- Added simple scenarios to cover main requirements; there would probably be more, especially as the loot table started to come from a different source
